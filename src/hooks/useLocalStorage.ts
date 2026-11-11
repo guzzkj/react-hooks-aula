@@ -1,12 +1,12 @@
 import { useEffect, useState, type Dispatch, type SetStateAction } from 'react';
 
-// Reaproveita estado e persistência em qualquer componente.
+// Reaproveita estado e persistÃªncia em qualquer componente.
 export function useLocalStorage<T>(
   chave: string,
   inicial: T,
 ): [T, Dispatch<SetStateAction<T>>] {
   const [valor, setValor] = useState<T>(() => {
-    // Busca o valor salvo quando o estado é inicializado.
+    // Busca o valor salvo quando o estado Ã© inicializado.
     try {
       const salvo = localStorage.getItem(chave);
       return salvo === null ? inicial : (JSON.parse(salvo) as T);
@@ -20,7 +20,7 @@ export function useLocalStorage<T>(
     try {
       localStorage.setItem(chave, JSON.stringify(valor));
     } catch {
-      // Erro de armazenamento não interrompe a demo.
+      // Erro de armazenamento nÃ£o interrompe a demo.
     }
   }, [chave, valor]);
 

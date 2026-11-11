@@ -1,7 +1,7 @@
 import { useCounter } from '../hooks/useCounter.ts';
 
 export default function Ex04Counter() {
-  // Mesma lógica reutilizada, com estados independentes.
+  // Mesma lÃ³gica reutilizada, com estados independentes.
   const a = useCounter(0);
   const b = useCounter(10);
 

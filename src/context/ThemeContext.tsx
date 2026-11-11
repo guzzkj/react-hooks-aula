@@ -7,7 +7,7 @@ interface ThemeContextValue {
   alternarTema: () => void;
 }
 
-// Cria o contexto; o valor ser· disponibilizado pelo Provider.
+// Cria o contexto; o valor ser√° disponibilizado pelo Provider.
 // eslint-disable-next-line react-refresh/only-export-components
 export const ThemeContext = createContext<ThemeContextValue>({
   tema: 'claro',
@@ -15,7 +15,7 @@ export const ThemeContext = createContext<ThemeContextValue>({
 });
 
 export function ThemeProvider({ children }: { children: ReactNode }) {
-  // O estado est· acima das p·ginas da aplicaÁ„o.
+  // O estado est√° acima das p√°ginas da aplica√ß√£o.
   const [tema, setTema] = useState<Tema>('claro');
 
   function alternarTema() {

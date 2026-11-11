@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-// Encapsula a lógica do contador; cada chamada mantém seu próprio estado.
+// Encapsula a lÃ³gica do contador; cada chamada mantÃ©m seu prÃ³prio estado.
 export function useCounter(inicial = 0) {
   const [contador, setContador] = useState(inicial);
 

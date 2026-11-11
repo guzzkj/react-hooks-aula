@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import { ThemeContext } from '../context/ThemeContext.tsx';
 
 export default function Ex03Context() {
-  // Consome valor compartilhado sem passar props intermedi·rias.
+  // Consome valor compartilhado sem passar props intermedi√°rias.
   const { tema, alternarTema } = useContext(ThemeContext);
 
   return (

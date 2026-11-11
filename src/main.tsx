@@ -7,9 +7,9 @@ import './styles.css';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    {/* O provedor envolve as rotas para manter o tema durante a navegação. */}
+    {/* O provedor envolve as rotas para manter o tema durante a navegaÃ§Ã£o. */}
     <ThemeProvider>
-      {/* Habilita navegação sem recarregar toda a página. */}
+      {/* Habilita navegaÃ§Ã£o sem recarregar toda a pÃ¡gina. */}
       <BrowserRouter>
         <App />
       </BrowserRouter>

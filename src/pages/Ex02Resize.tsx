@@ -20,7 +20,7 @@ export default function Ex02Resize() {
     <section className="panel">
       <h1>Monitor de largura</h1>
       <p className="metric">{largura}px</p>
-      <p>{largura < 768 ? '?? Mobile' : '??? Desktop'}</p>
+      <p>{largura < 768 ? '📱 Mobile' : '🖥️ Desktop'}</p>
     </section>
   );
 }

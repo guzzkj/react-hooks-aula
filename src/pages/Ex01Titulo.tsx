@@ -1,22 +1,22 @@
 import { useEffect, useState } from 'react';
 
 export default function Ex01Titulo() {
-  // Estado local que controla o número de cliques.
+  // Estado local que controla o nÃºmero de cliques.
   const [cliques, setCliques] = useState(0);
 
   useEffect(() => {
-    // Sincroniza o título da aba com o estado.
-    document.title = `Cliques: ${cliques} | Laboratório React`;
+    // Sincroniza o tÃ­tulo da aba com o estado.
+    document.title = `Cliques: ${cliques} | LaboratÃ³rio React`;
 
-    // Restaura o título quando o efeito for limpo.
+    // Restaura o tÃ­tulo quando o efeito for limpo.
     return () => {
-      document.title = 'Laboratório React: Hooks e Context';
+      document.title = 'LaboratÃ³rio React: Hooks e Context';
     };
-  }, [cliques]); // O efeito acompanha as alterações de cliques.
+  }, [cliques]); // O efeito acompanha as alteraÃ§Ãµes de cliques.
 
   return (
     <section className="panel">
-      <h1>Contador e título da aba</h1>
+      <h1>Contador e tÃ­tulo da aba</h1>
       <p className="metric">{cliques} cliques</p>
       <button onClick={() => setCliques(c => c + 1)}>
         Adicionar clique
